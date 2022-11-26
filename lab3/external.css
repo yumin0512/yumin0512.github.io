@@ -1,0 +1,36 @@
+		@media screen and (max-width: 100px){	
+			body{background-color: dimgray}
+		}
+		body{	font-family: sans-serif, arial;
+				padding-top: 50px;
+				padding-left: 50px;
+				padding-right: 50px; 
+				padding-bottom: 50px;
+				color: powderblue;
+				background-color: black;
+				}
+		nav {	font-weight: bold;
+				color: black;
+				border: 2px solid lightblue;
+				text-align: center;
+				width: 15em;
+				background-color: lightblue;
+				}
+		nav	ul	{	display: none;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					position: relative;
+					top: 0px;
+					left: 0px;
+					}
+		nav:hover ul	{	display: block;}
+		nav	ul	li 		{	border-top: 2px solid lightblue;
+							background-color: lightgray;
+							width: 15em;
+							margin: 10px;
+							padding-top: 8px;
+							}
+		nav	ul	li:hover	{	background-color: violet;
+								border-right: 3px solid blueviolet;}
+		a 	{	text-decoration: none;}

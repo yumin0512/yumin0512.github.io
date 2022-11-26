@@ -1,0 +1,13 @@
+
+		.content span{ font-weight:bold; text-decoration:underline;}
+		li span{ color:blue; }
+		h2{ background-color:gray; }
+
+		thead em{ color:red; }
+		tbody em{ color:rebeccapurple ; }
+		label{ text-decoration:underline; }
+		.question{ background-color:gold; }
+
+		.content{ font-weight:bold; }
+		#content{ font-weight:inherit; }
+
