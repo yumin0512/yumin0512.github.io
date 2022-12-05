@@ -1,7 +1,26 @@
-	div	{	margin-left: auto;
-			margin-right: auto;}
+	
+	body{	font-style: arial;
+			align-content: center;
+			margin-left: auto;}
+	div	{	margin-top: 5px;
+			width: 100%}
+	.content{	width: 100%}
+	.title	{	float: left;
+				width: 15%;
+				margin-right: 20px;
+				text-align: right;}
+	.box	{	float: left;}
+	#left float{	float:left;}
+	#right float{	float:right;}
+	textarea{	resize: none;}
+	img	{	width:	60%}
+
+	@media screen and (min-width: 600px){
+		body{
+			background-color: lightblue;
+		}
+	}
 
 
-
-			{	}
+		
 
