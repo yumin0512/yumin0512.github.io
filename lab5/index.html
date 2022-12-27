@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	
+	<p>
+	<img id="die1" src="die1.png" alt="blank image">
+	<img id="die2" src="die2.png" alt="blank image">
+	<img id="die3" src="die3.png" alt="blank image">
+	<img id="die4" src="die4.png" alt="blank image">
+	<img id="die5" src="die5.png" alt="blank image">
+	<img id="die6" src="die6.png" alt="blank image">
+	<br>
+	<img id="die7" src="die1.png" alt="blank image">
+	<img id="die8" src="die2.png" alt="blank image">
+	<img id="die9" src="die3.png" alt="blank image">
+	<img id="die10" src="die4.png" alt="blank image">
+	<img id="die11" src="die5.png" alt="blank image">
+	<img id="die12" src="die6.png" alt="blank image">
+	</p>
+	<form action="#">
+		<input type="button" id="rollButton" value="Roll Dice">
+	</form>
+	<table border="1">
+		<caption>Die Rolling Frequencies</caption>
+		<thead>
+			<tr>
+				<th>Face</th>
+				<th>Frequency</th>
+				<th>Percent</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		
+		
+		function start()
+		{
+			var button=document.getElementById("rollButton");
+			button.addEventListener("click",rollDice);
+			die1image=document.getElementById("die1");
+			die2image=document.getElementById("die2");
+			die3image=document.getElementById("die3");
+			die4image=document.getElementById("die4");
+			die5image=document.getElementById("die5");
+			die6image=document.getElementById("die6");
+			die7image=document.getElementById("die7");
+			die8image=document.getElementById("die8");
+			die9image=document.getElementById("die9");
+			die10image=document.getElementById("die10");
+			die11image=document.getElementById("die11");
+			die12image=document.getElementById("die12");
+		}
+		window.addEventListener("load",start);
+		function setImage(dieImg)
+		{
+			var dieValue = Math.floor(1 + Math.random()*6);
+			dieImg.setAttribute("src","die"+dieValue+".png");
+			dieImg.setAttribute("alt",dieValue+" spot(s)");
+		}
+		function tallyRolls(face){
+
+		}
+		function updateFrequencyTable(){
+
+		}
+		function rollDice()
+		{
+			setImage(die1image);
+			setImage(die2image);
+			setImage(die3image);
+			setImage(die4image);
+			setImage(die5image);
+			setImage(die6image);
+			setImage(die7image);
+			setImage(die8image);
+			setImage(die9image);
+			setImage(die10image);
+			setImage(die11image);
+			setImage(die12image);
+		}
+	</script>
+</body>
+</html>
