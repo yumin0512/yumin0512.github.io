@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sentence;
+		sentence = window.prompt("input data");
+		var char;
+		char = window.prompt("input a char to search");
+
+		document.writeln(sentence.indexOf(char));
+		document.writeln(sentence.lastIndexOf(char));
+		document.writeln(sentence.indexOf(char),3);
+		for(var i=sentence.indexOf(char)+1;i<sentence.lastIndexOf(char)-1;++i){
+			document.writeln(sentence.indexOf(char),i);
+			++i;
+		}
+	</script>
+</body>
+</html>
